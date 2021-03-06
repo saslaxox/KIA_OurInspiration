@@ -1,0 +1,67 @@
+/* Text Style */
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: "KiaSignature";
+    font-style: normal;
+    font-weight: 100;
+    src: url(../font/KiaSignatureLight.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "KiaSignature";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/KiaSignatureRegular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "KiaSignature";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../font/KiaSignatureBold.woff2) format("woff2");
+}
+
+html {
+    background-color: #fff;
+    font-size: 62.5%;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; }
+    
+@media (max-width: 22.4375em) {
+html {
+    font-size: 56.25%; } }
+
+body {
+min-width: 280px;
+margin: 0;
+color: #414141;
+font-size: 1em;
+font-family: "KiaSignature", sans-serif;
+-webkit-overflow-scrolling: touch; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  word-break: keep-all;
+  word-wrap: break-word; }
+
+p {
+  word-break: keep-all;
+  word-wrap: break-word; }
+
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
