@@ -65,3 +65,6 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
+
+main {
+    line-height: 1.6; }

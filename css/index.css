@@ -1,0 +1,106 @@
+/* hero - 1st vh */
+
+header, div {
+    display: block; }
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden; }
+
+.hero__cont {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    z-index: 11;
+    min-width: 30rem;
+    text-align: center;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+
+.hero .eyebrow {
+    color: #f6f2ed;
+    font-family: "KiaSignature", sans-serif;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: .15em; 
+    margin-bottom: 2.5rem; }
+
+.hero .title {
+    margin: 0;
+    font-size: 4.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #fff; }
+
+.btn-guide-arrow {
+    opacity: 1;
+    visibility: inherit;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 29px;
+    height: 25px;
+    transform: translate3d(-50%, 0, 0);
+    animation: arrow-down infinite 1.5s;
+    cursor: pointer;
+    z-index: 11;
+    background-image: url(../img/arrow_down.png); }
+
+
+    /* Arrow-down 애니메이션 적용 */
+@keyframes arrow-down {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); }
+  30% {
+    -webkit-transform: translate3d(-50%, 20%, 0);
+            transform: translate3d(-50%, 20%, 0); }
+  60% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0); } }
+
+/* 2nd vh */
+.veil {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(57, 50, 43, 0.8); }
+
+.veil__cont { 
+    padding-top: 30vh;
+    max-width: 84rem;
+    min-height: 280px;
+    color: #fff;
+    word-break: keep-all;
+    word-wrap: break-word;
+    margin: 0 auto; }
+
+.veil__sub {
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-align: center;  }
+
+/* 3rd vh */
+
+.sect__area {
+    position: relative;
+}
+.sect__cont {
+    position: absolute;
+    top: 45vh;
+    left: 14%;
+}
+.sect__h {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.sect__p {
+    font-size: 2.2rem;
+    /* margin-bottom: 35%; */
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.3rem 0 65%;
+}
