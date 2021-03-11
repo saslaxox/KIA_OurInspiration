@@ -18,6 +18,7 @@ header, div {
     background-image: url(../img/hero-lg.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     object-position: 50% 50%;
     object-fit: cover; }
 
@@ -104,18 +105,35 @@ header, div {
 }
 
 /* 2nd vh */
+
+main .pin-spacer:nth-child(1) {
+    z-index: 20;
+    float: none;
+    flex-shrink: 1;
+    display: flex;
+    margin: 0px;
+    inset: 0px;
+    position: relative;
+    overflow: visible;
+    /* padding: 0px 0px 400px; */
+}
+
 .veil {
     width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0; 
     background-color: rgba(57, 50, 43, 0.8); 
     display: flex;
     justify-content: center;
-    align-items: center }
+    align-items: center;
+    z-index: 20; }
+
 
 .veil__cont { 
-    padding-top: 12%;
     min-height: 280px;
-    color: rgb(255,255,255);;
+    color: rgb(255,255,255);
     word-break: keep-all;
     word-wrap: break-word;
     margin: 0 auto; }
@@ -170,7 +188,7 @@ main .pin-spacer:nth-child(2) {
 }
 
 .sect__area {
-    position: relative;}
+    position: relative; }
 .sect__cont {
     position: absolute;
     top: 45vh;
