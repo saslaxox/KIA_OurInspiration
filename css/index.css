@@ -3,10 +3,10 @@
 header, div {
     display: block; }
 
-.pin-spacer {
+/* .pin-spacer {
     width: 100%;
     height: 100vh;
-}    
+}     */
 
 .hero {
     min-height: 100vh;
@@ -107,7 +107,9 @@ header, div {
 /* 2nd vh */
 
 main .pin-spacer:nth-child(1) {
-    z-index: 20;
+    /* width: 100%;
+    height: 100vh; */
+    z-index: 12;
     float: none;
     flex-shrink: 1;
     display: flex;
