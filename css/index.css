@@ -1,18 +1,15 @@
 /* hero - 1st vh */
 
+
+
 header, div {
     display: block; }
 
-/* .pin-spacer {
+.pin-spacer {
     width: 100%;
     height: 100vh;
-}     */
-
-.hero {
-    min-height: 100vh;
-    position: relative;
-    height: calc(var(--vh, 1vh) * 100);
-    overflow: hidden; 
+}    
+.main_bg {
     width: 100%;
     height: 100%;
     background-image: url(../img/hero-lg.jpg);
@@ -20,7 +17,16 @@ header, div {
     background-attachment: fixed;
     background-repeat: no-repeat;
     object-position: 50% 50%;
-    object-fit: cover; }
+    object-fit: cover;
+}
+.hero {
+    min-height: 100vh;
+    position: relative;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden; 
+    width: 100%;
+    height: 100%;
+ }
 
 
 .hero__cont {
@@ -107,8 +113,6 @@ header, div {
 /* 2nd vh */
 
 main .pin-spacer:nth-child(1) {
-    /* width: 100%;
-    height: 100vh; */
     z-index: 12;
     float: none;
     flex-shrink: 1;
@@ -117,7 +121,6 @@ main .pin-spacer:nth-child(1) {
     inset: 0px;
     position: relative;
     overflow: visible;
-    /* padding: 0px 0px 400px; */
 }
 
 .veil {
@@ -182,19 +185,36 @@ main .pin-spacer:nth-child(1) {
 
 /* 3rd vh */
 
-main .pin-spacer:nth-child(2) {
+.pin-spacer_3rd {
     width: 100%;
     height: 100vh;
     background-color: rgb(80,95,120);
     position: relative;
 }
 
+.sect__front {
+    width: 100%;
+    height: 100vh;
+}
+
+.sect__visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0 0 100px;
+}
+
+.video-rwd video {
+    width: 960px; }
+
+
+
 .sect__area {
     position: relative; }
 .sect__cont {
     position: absolute;
-    top: 45vh;
-    left: 14%; }
+    top: 35vh;
+    left: 12%; }
 .sect__h {
     font-size: 30px;
     font-weight: bold;
@@ -207,25 +227,20 @@ main .pin-spacer:nth-child(2) {
 
 
 
-@media only screen and (min-width: 415px) and (max-width: 959px) {
-    
-
+@media only screen and (min-width: 415px) and (max-width: 959px) { 
     .sect__area {
-        z-index: 10; }
+        z-index: 10;
+        position: relative;  }
     .sect__cont {
-        top: 9vh;
-        left: 4%; }
-    .video-rwd video {
-        position:absolute; 
-        top: 50%;
-        left: 0;
-        margin-top: -280px;
+        top: 7vh;
+        left: 3%; }
+    .sect__visual {
+        padding: 110px 0;
     }
     .sect__h {
         font-size: 26px; }
     .sect__p {
         font-size: 16px; }
-
 }
 
 @media only screen and (max-width: 414px) {
