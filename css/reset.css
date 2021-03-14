@@ -35,3 +35,7 @@ svg:not(:root) {
     overflow: hidden;
     max-width: 100%;
     vertical-align: top; }
+
+a {
+    cursor: pointer;
+}
