@@ -1,6 +1,8 @@
 /* hero - 1st vh */
 
-
+.root {
+    position: relative;
+}
 
 div {
     display: block; }
@@ -235,7 +237,7 @@ main .pin-spacer:nth-child(1) {
         top: 7vh;
         left: 3%; }
     .sect__visual {
-        padding: 110px 0;
+        padding: 60px 0;
     }
     .sect__h {
         font-size: 26px; }
